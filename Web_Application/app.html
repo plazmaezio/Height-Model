@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height Prediction Model</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Height Prediction</h1>
+        <form action="/height-model" method="post">
+            <div class="form-group">
+                <label for="tap_preference">Tap Preference</label>
+                <input type="text" id="tap_preference" name="tap_preference" required>
+            </div>
+            <div class="form-group">
+                <label for="time">Time (seconds)</label>
+                <input type="text" id="time" name="time" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Predict Height</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
